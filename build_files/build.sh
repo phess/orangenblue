@@ -72,4 +72,5 @@ systemctl mask systemd-remount-fs.service
 rm /usr/lib/sysusers.d/brltty.conf
 systemctl disable brltty.service
 
-
+# Try to eliminate "group <something> already exists" error messages from systemd-sysusers.
+> /etc/gshadow
