@@ -63,3 +63,13 @@ dnf5 install -y keybase
 
 #systemctl enable podman.socket
 systemctl enable tailscaled
+
+# See https://gitlab.com/fedora/ostree/sig/-/issues/72
+systemctl mask systemd-remount-fs.service
+
+# User brlapi already exists, so systemd-sysusers fails to create it; replace the "upstream" file with an empty one.
+#touch /etc/sysusers.d/brltty.conf
+rm /usr/lib/sysusers.d/brltty.conf
+systemctl disable brltty.service
+
+
