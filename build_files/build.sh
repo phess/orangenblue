@@ -13,6 +13,7 @@ set -ouex pipefail
 dnf5 remove -y nano-default-editor
 dnf5 install -y \
    at \
+   bcachefs-tools \
    btop \
    distrobox \
    duperemove \
