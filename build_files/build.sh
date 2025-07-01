@@ -47,8 +47,8 @@ dnf5 install -y \
    vim \
    vim-default-editor
 
-dnf5 install -y https://prerelease.keybase.io/keybase_amd64.rpm
-dnf5 install -y keybase
+#dnf5 install -y https://prerelease.keybase.io/keybase_amd64.rpm
+#dnf5 install -y keybase
 
 ## TODO: Figure out how to install RPMs from a repo that is only available inside my intranet.
 
