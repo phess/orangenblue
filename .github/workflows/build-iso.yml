@@ -22,6 +22,8 @@ on:
       - './iso.toml'
       - './.github/workflows/build-iso.yml'
       - './Justfile'
+  calendar:
+    - cron: "59 10 * * TUE"  ## 10:59 UTC every Tuesday
 
 env:
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository }}"
