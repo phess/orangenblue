@@ -37,6 +37,7 @@ dnf5 install -y \
    ripgrep \
    solaar \
    strace \
+   sssd \
    sysstat \
    systemd-container \
    tailscale \
