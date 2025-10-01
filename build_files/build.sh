@@ -76,3 +76,7 @@ systemctl disable brltty.service
 # Disable systemd-homed
 systemctl disable systemd-homed
 systemctl mask systemd-homed
+
+# Enable local auth with yubikey (pam-u2f)
+authselect select sssd
+authselect enable-feature with-pam-u2f
