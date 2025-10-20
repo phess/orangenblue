@@ -46,7 +46,8 @@ dnf5 install -y \
    v4l-utils \
    yaru-theme \
    vim \
-   vim-default-editor
+   vim-default-editor \
+   virt-manager
 
 #dnf5 install -y https://prerelease.keybase.io/keybase_amd64.rpm
 #dnf5 install -y keybase
