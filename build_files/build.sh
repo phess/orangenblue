@@ -17,7 +17,7 @@ dnf5 install -y \
    btop \
    distrobox \
    duperemove \
-   du-dust \++++++
+   du-dust \
    firefox \
    git \
    gnome-shell-extension-user-theme \
