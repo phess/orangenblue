@@ -81,5 +81,7 @@ systemctl disable systemd-homed
 systemctl mask systemd-homed
 
 # Enable local auth with yubikey (pam-u2f)
-authselect select sssd
+authselect select local
 authselect enable-feature with-pam-u2f
+authselect enable-feature with-fingerprint
+systemctl enable fingerprintd
