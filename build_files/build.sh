@@ -84,4 +84,4 @@ systemctl mask systemd-homed
 authselect select local
 authselect enable-feature with-pam-u2f
 authselect enable-feature with-fingerprint
-systemctl enable fingerprintd
+systemctl enable fprintd
