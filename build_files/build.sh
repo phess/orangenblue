@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 remove -y nano-default-editor
+dnf5 remove -y nano-default-editor && dnf5 clean all
 dnf5 install -y \
    at \
    bcachefs-tools \
@@ -48,7 +48,7 @@ dnf5 install -y \
    yaru-theme \
    vim \
    vim-default-editor \
-   virt-manager
+   virt-manager && dnf5 clean all
 
 #dnf5 install -y https://prerelease.keybase.io/keybase_amd64.rpm
 #dnf5 install -y keybase
