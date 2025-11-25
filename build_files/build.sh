@@ -68,6 +68,11 @@ dnf5 install -y \
 #systemctl enable podman.socket
 systemctl enable tailscaled
 
+#Enable systemd-resolved and point /etc/resolv.conf to systemd-resolved's stub resolver
+systemctl enable systemd-resolved
+rm /etc/resolv.conf
+ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
 # See https://gitlab.com/fedora/ostree/sig/-/issues/72
 systemctl mask systemd-remount-fs.service
 
