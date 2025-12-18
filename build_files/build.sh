@@ -50,6 +50,10 @@ dnf5 install -y \
    vim-default-editor \
    virt-manager && dnf5 clean all
 
+dnf5 remove -y toolbox
+
+
+
 #dnf5 install -y https://prerelease.keybase.io/keybase_amd64.rpm
 #dnf5 install -y keybase
 
