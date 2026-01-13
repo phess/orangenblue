@@ -22,6 +22,7 @@ dnf5 install -y \
    git \
    gnome-shell-extension-user-theme \
    gnome-tweaks \
+   gnupg2-scdaemon \
    iptraf-ng \
    krb5-workstation \
    libvirt-daemon \
